@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Criptografia de Textos</title>
+  </head>
+  <body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">a</div>
+        </header>
+        <main class="main">
+            <div class="input-section">
+                
+                <input id="inputText" type="text" placeholder="Digite o texto">
+                
+                <div class="info">
+                    <span>⚠️ Apenas letras minúsculas e sem acento.</span>
+                </div>
+                <div class="buttons">
+                    <button onclick="criptografar()" class="btn criptografar">Criptografar</button>
+                    <button onclick="descriptografar()" class="btn descriptografar">Descriptografar</button>
+                </div>
+            </div>
+            <div class="output-section">
+                <div class="output-message" id="outputMessage">
+                    <img src="img/image2.png" alt="No message found" id="placeholderImage">
+                    <p>Nenhuma mensagem encontrada</p>
+                    
+                </div>
+                <textarea id="outputText" placeholder="Digite um texto que você deseja criptografar ou descriptografar." readonly></textarea>
+                <button onclick="copiar()" class="btn copiar">Copiar</button>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
